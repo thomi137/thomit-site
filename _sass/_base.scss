@@ -1,0 +1,246 @@
+/*--------------base-------
+*/
+
+html, 
+body {
+    height: 100%;
+    color: #121212;
+}
+body {
+    font-family: $primary-font;
+    font-weight: 400;
+    color: $base-color;
+    -webkit-font-smoothing: antialiased;
+
+}
+/*typography bootstrap overrides*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: $primary-font;
+    font-weight: 600;
+    line-height: 1;
+    color: #121212;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 27px;
+
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 16px;
+}
+h6{
+    font-size: 13px;
+}
+p{
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 14px;
+    color:$base-color;
+}
+a {
+    background: transparent;
+    outline: none; 
+    text-decoration: none;  
+    @include transition (0.4s cubic-bezier(0.25,.46,.45,.94));
+    -webkit-transition-property: background-color,color;
+    transition-property: background-color,color;
+}
+a:active,
+a:hover,
+a:focus {
+    outline: 0; 
+    color: $skincolor ;
+    text-decoration: none;    
+}
+.padding-80{
+    padding: 80px 0;
+}
+.padding-50{
+    padding: 50px 0;
+}
+.margin-btm-40{
+    margin-bottom: 40px;
+}
+.margin-btm-20{
+    margin-bottom: 20px;
+}
+
+/*************
+**headings****/
+.section-heading{
+    margin-bottom: 60px;
+}
+.section-heading .small{
+    opacity: .75;
+    margin-bottom: 0px;
+}
+.section-heading .large{
+    opacity: 1;
+}
+.section-heading .section-title{
+    color:#000;
+    text-transform: capitalize;
+}
+.section-heading .small span{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #666;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+}
+.section-heading .large{
+    font-weight: 600;
+    font-size: 35px;
+text-transform: uppercase;
+}
+/*******************
+page-head section
+*******************/
+#page-head-bg{
+    background-image: url('../img/dark-bg-4.jpg');
+    padding: 100px 0;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#page-head-bg h1{
+    margin: 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    font-size: 31px;
+}
+/*forms*/
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.form-control{
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #7a7a7a;
+    border: 1px solid #dadada;
+    resize: none;
+    height: 39px;
+    vertical-align: middle;
+    @include box-shadow (none);
+    background: #FFF;
+    @include border-radius (0px);
+    @include transition (all 200ms ease-in);
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.form-control:focus{
+    border: 1px solid #999;
+    background: #FFF;
+    @include box-shadow (none);
+}
+#contactForm .form-group{
+    margin-bottom: 0px !important; 
+}
+/***************buttons*****************************/
+.btn {
+    font-weight: 400;
+    font-size: 13px;
+    text-shadow: none !important;
+    -webkit-text-shadow:none !important;
+    text-transform: uppercase;
+    @include transition (all 200ms ease-in);
+    @include border-radius (0px);
+    @include box-shadow (none);
+    display: inline-block;
+    font-family: $primary-font;
+}
+.btn:hover,.btn:focus{
+    outline: 0;
+    color:#fff;
+}
+.btn-theme-color{
+    background-color: $skincolor;
+    color:#fff;
+}
+.btn-theme-color:hover,.btn-theme-color:focus{
+    color:#fff !important;
+    background-color: #000 !important;
+
+}
+
+/*********************
+social icons css here
+*********************/
+.social-colored{
+    margin:0;
+    padding: 0;
+}
+.social-colored li.empty-text{
+    font-size: 12px;
+    color:#333;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 10px;
+    padding: 0px;
+}
+.social-colored li a i{
+    color:#fff;
+    width:30px;
+    height: 30px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+    @include border-radius (2px);
+}
+
+.social-colored li a i.icon-fb{
+    background-color: #077aaa;
+}
+.social-colored li a i.icon-twit{
+    background-color: #00A8FF;
+}
+.social-colored li a i.icon-plus{
+    background-color: #c7254e;
+}
+.social-colored li a i.icon-pin{
+    background-color: #843534;
+}
+/**v1.1**/
+.social-colored li a i.icon-in{
+    background-color: #007bb6;
+}

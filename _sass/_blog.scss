@@ -1,0 +1,98 @@
+
+/*****************************
+blog section css here
+*****************************/
+.blog-item-sec{
+    padding: 20px 20px;
+    margin-top:0px;
+    margin-bottom: 60px;
+    border:1px solid #eeeeee;
+}
+.blog-item-sec img{
+    margin-bottom: 30px;
+}
+
+.blog-item-head{
+    padding: 15px 0px;
+    margin: 10px 0;
+}
+.blog-item-head h3{
+    font-weight:600;
+    font-size: 25px;
+    margin: 0px;
+}
+.blog-item-head h3 a{
+    color:#121212;
+    text-transform: uppercase;
+}
+.blog-item-head h3 a:hover{
+    color:$skincolor;
+}
+.blog-item-post-info{
+    padding: 5px 0px;
+    border-top:1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    margin: 10px 0;
+}
+.blog-item-post-info span{
+    font-weight: 600;
+    color:#999;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.blog-item-post-info span a{
+    color:#999;
+}
+.blog-item-post-info span a:hover{
+    color: $skincolor;
+}
+.blog-more-desc{
+    margin:30px 0;
+    padding: 10px 0;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/*blog post*/
+
+.comment-wrapper{
+    padding: 10px 0;
+}
+.comment-box{
+    padding: 20px 0;
+    margin: 20px 0;
+}
+.comment-list{
+    margin:20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.comment-list p{
+    overflow: hidden;
+}
+.comment-list img{
+    max-width:64px;
+    width:64px;
+    height: 64px;    
+    @include border-radius (32px);
+    float: left;
+    margin-right: 15px;
+}
+.comment-list h5{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.comment-form h4{
+    margin-bottom: 30px;
+}
+
+.more-link{
+    text-align: right;
+    padding-top: 5px;
+}
+.more-link a{
+    color:$skincolor;
+    font-weight: 600;
+
+}

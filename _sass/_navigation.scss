@@ -1,0 +1,164 @@
+/*********************
+bootstrap navbar overrides
+*************************/
+
+.navbar-default {
+    border-color: transparent;
+    border-bottom: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    z-index: 4;
+    background-color: #fff;
+    opacity: .95;
+    @include box-shadow (0 1px 5px rgba(0, 0, 0, 0.15));
+}
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: $primary-font;
+}
+.navbar-default .navbar-nav > li span{
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    color: #000;
+    text-transform:uppercase;
+    font-size:14px;
+    &:hover{
+        color:$skincolor;
+    }
+}
+.navbar-default .navbar-nav > li.nav-social a{
+    font-size: 13px;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: $skincolor !important;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: $skincolor !important;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+    color: $skincolor !important;
+    background-color: transparent;
+}
+.navbar-default .navbar-brand{
+    font-weight:400;
+    text-transform: uppercase;
+    color:#000 !important;
+    margin:0px;
+    font-size: 24px;
+    font-family: $primary-font !important;
+}
+.navbar-brand:hover{
+    color:#000 !important;
+}
+.navbar-default .navbar-toggle{
+    border: 0px;
+}
+@media(min-width:768px){
+    .fixed-navigation .navbar-default.navbar-transparent{
+        margin: 0px;
+        background-color: rgba(255,255,255,0);
+        @include box-shadow (none);
+        @include transition (all 0.4s ease-in-out);
+        padding: 20px 0;
+    }
+    .fixed-navigation .navbar-default.navbar-transparent .navbar-nav>li>a, .fixed-navigation .navbar-default.navbar-transparent .navbar-nav>li>span{
+        color:#fff;
+    }
+    .fixed-navigation .navbar-default.navbar-transparent .navbar-brand{
+        color:#fff !important;
+    }
+    .fixed-navigation .navbar-default.navbar-bg{
+        background-color: rgba(255,255,255,.9);
+        padding: 5px 0;
+        @include box-shadow ( 0 1px 5px rgba(0, 0, 0, 0.15));
+    }
+    .fixed-navigation .navbar-default.navbar-bg .navbar-nav>li>a, .fixed-navigation .navbar-default.navbar-bg .navbar-nav>li>span{
+        color:#000;
+    }
+    .fixed-navigation .navbar-default.navbar-bg .navbar-brand{
+        color:#000 !important;
+    }
+}
+.dropdown-menu{
+    border: 0px;
+    min-width: 160px;
+    padding: 0px;
+    background-color: #1c1c1c;
+}
+.dropdown-menu>li>a{
+    padding: 10px 20px;
+    color:#bbb;
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 12px;
+    border-bottom: 1px dotted #333;
+    text-transform: capitalize;
+}
+.dropdown-menu>li>a:hover{
+    background-color: transparent;
+    color:$skincolor;
+}
+/****MULTI LEVEL DROPDOWN CSS
+
+*********************/
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: -2px;
+  left: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+}
+
+@media (max-width: 767px) {
+  .dropdown-submenu > .dropdown-menu {
+    padding-left: 20px;
+  }
+}
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu > a:after {
+  top: 12px;
+  right: 9px;
+  font-size: 11px;
+  content: "\f105";
+  position: absolute;
+  font-weight: normal;
+  display: inline-block;
+  font-family: FontAwesome;
+}
+
+.dropdown-submenu.pull-left {
+  float: none;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.navbar-header>a>img{
+    height:40px;
+    padding-top:5px;
+}
