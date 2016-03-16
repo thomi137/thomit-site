@@ -1,13 +1,13 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-/* 
+/*
     project   : Codeon v3.2
     Created on : May 31, 2014, 10:42:39 AM
     Author     : design_mylife
     Description: clean modern one page Template.
     Last updated on December 12, 2015
-       
+
 */
 
 
@@ -289,12 +289,12 @@ our work section
 @media(max-width:768px){
     .work-col-4 .project-post, .work-col-3 .project-post, .work-fullwidth .project-post, .work-masonry .project-post{
         width:50%;
-    } 
+    }
 }
 @media(max-width:568px){
     .work-col-4 .project-post, .work-col-3 .project-post, .work-fullwidth .project-post, .work-masonry .project-post{
         width:100%;
-    } 
+    }
 }
 #portfolio-masonry{
     padding-top: 50px;
@@ -354,7 +354,7 @@ our work section
     font-weight: 600;
     margin-top: -10px;
     width: 100%;
-    @include transition (all 0.3s ease-out); 
+    @include transition (all 0.3s ease-out);
 }
 .image-wrapper:hover .image-overlay{
     opacity: 1;
@@ -591,13 +591,13 @@ our work section
     .call-sec{
         width:100% !important;
         margin: 0 0 0 0 !important;
-    }  
+    }
 
     .slide-btm-text{
         display: none;
     }
     #page-head-bg h1{
-        font-size: 3em; 
+        font-size: 3em;
     }
     .purchase-now{
         text-align: center !important;
@@ -621,7 +621,7 @@ our work section
         margin-bottom: 30px;
     }
     .home-arrow-down{
-        margin-top: 30px;  
+        margin-top: 30px;
     }
 
 }
@@ -700,7 +700,7 @@ iframe{
 
 /**testi***/
 .testi{
-    background-image:url(../img/bg-1.jpg); 
+    background-image:url(../img/bg-1.jpg);
     padding: 90px 0;
     background-position: center top;
     background-size: cover;
@@ -719,7 +719,7 @@ iframe{
 .testi p{
     color:#fff;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 16px;
     text-transform: uppercase;
 }
 .testi .owl-page.active span {
@@ -802,7 +802,7 @@ label span{
     height: 40px;
     line-height: 40px;
     text-align: center;
-    text-align:center; 
+    text-align:center;
     background: whiteSmoke;
     font-weight: bold;
     color: #fff;

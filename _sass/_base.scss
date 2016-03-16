@@ -1,7 +1,7 @@
 /*--------------base-------
 */
 
-html, 
+html,
 body {
     height: 100%;
     color: #121212;
@@ -42,13 +42,13 @@ h6{
 p{
     line-height: 25px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color:$base-color;
 }
 a {
     background: transparent;
-    outline: none; 
-    text-decoration: none;  
+    outline: none;
+    text-decoration: none;
     @include transition (0.4s cubic-bezier(0.25,.46,.45,.94));
     -webkit-transition-property: background-color,color;
     transition-property: background-color,color;
@@ -56,9 +56,9 @@ a {
 a:active,
 a:hover,
 a:focus {
-    outline: 0; 
+    outline: 0;
     color: $skincolor ;
-    text-decoration: none;    
+    text-decoration: none;
 }
 .padding-80{
     padding: 80px 0;
@@ -105,7 +105,7 @@ text-transform: uppercase;
 page-head section
 *******************/
 #page-head-bg{
-    background-image: url('../img/dark-bg-4.jpg');
+    background-image: url('../img/keyboard.jpg');
     padding: 100px 0;
     text-align: center;
     background-size: cover;
@@ -115,7 +115,7 @@ page-head section
 #page-head-bg h1{
     margin: 0;
     text-transform: uppercase;
-    color: #fff;
+    color: #777;
     font-weight: 400;
     font-size: 31px;
 }
@@ -174,7 +174,7 @@ input[type="color"]:focus,
     @include box-shadow (none);
 }
 #contactForm .form-group{
-    margin-bottom: 0px !important; 
+    margin-bottom: 0px !important;
 }
 /***************buttons*****************************/
 .btn {
